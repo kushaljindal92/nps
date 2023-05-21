@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Email/etc/email_templates.xsd">
+    <template id="nps_email" label="NPS email" file="nps_email.html" type="html" module="Magentomaster_Nps" area="adminhtml"/>
+    <template id="coupon_email" label="Coupon Email" file="coupon_email.html" type="html" module="Magentomaster_Nps" area="adminhtml"/>
+</config>

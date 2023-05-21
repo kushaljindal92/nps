@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<tab id="magentomaster" translate="label" sortOrder="999">
+			<label>magentomaster</label>
+		</tab>
+		<section id="nps" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+			<label>Settings</label>
+			<tab>magentomaster</tab>
+			<resource>Magentomaster_Nps::config_magentomaster_nps</resource>
+			<group id="nps" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+				<label>NPS Emails</label>
+				<field id="send_email" type="select" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+					<label>Send NPS Email</label>
+					<comment/>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+				<field id="nps_email_id" type="text" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+					<label>NPS Email ID</label>
+				</field>
+				<field id="nps_email_from" type="text" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+					<label>NPS Email From</label>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>
+

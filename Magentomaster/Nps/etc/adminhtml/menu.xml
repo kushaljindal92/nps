@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu>
+		<add id="Magentomaster::top_level" title="Magentomaster" module="Magentomaster_Nps" sortOrder="9999" resource="Magento_Backend::content"/>
+		<add id="Magentomaster_Nps::magentomaster_nps_nps" title="Nps" module="Magentomaster_Nps" sortOrder="9999" resource="Magento_Backend::content" parent="Magentomaster::top_level" action="magentomaster_nps/nps/index"/>
+	</menu>
+</config>

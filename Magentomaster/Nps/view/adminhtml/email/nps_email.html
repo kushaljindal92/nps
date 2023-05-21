@@ -1,0 +1,30 @@
+<!-- File: app/code/Magentomaster/Nps/view/frontend/email/nps_email_template.html -->
+<!--@subject {{trans "Feedback Email"}}  @-->
+<!-- Email Content -->
+<table style="width: 100%; max-width: 600px; margin: 0 auto; font-family: Arial, sans-serif; color: #333333;">
+    <tr>
+        <td style="padding: 20px;">
+            <h1 style="font-size: 24px; margin-bottom: 20px;">We'd love to hear your feedback!</h1>
+            <p style="margin-bottom: 10px;">Dear {{var customer_name}},</p>
+            <p style="margin-bottom: 20px;">Thank you for being our valued customer. We strive to provide the best experience possible and would appreciate your feedback.</p>
+            <p style="margin-bottom: 10px;">On a scale of 0-10, how likely are you to recommend our services to a friend or colleague?</p>
+            <p style="margin-bottom: 20px;">Please take a moment to rate us:</p>
+            <p style="margin-bottom: 10px;">
+                <a href="{{var nps_link}}&&score=0" style="display: inline-block; margin-right: 5px; color: #333333; text-decoration: none; background-color: #f1f1f1; padding: 5px 10px; border-radius: 3px;">0</a>
+                <a href="{{var nps_link}}&&score=1" style="display: inline-block; margin-right: 5px; color: #333333; text-decoration: none; background-color: #f1f1f1; padding: 5px 10px; border-radius: 3px;">1</a>
+                <a href="{{var nps_link}}&&score=2" style="display: inline-block; margin-right: 5px; color: #333333; text-decoration: none; background-color: #f1f1f1; padding: 5px 10px; border-radius: 3px;">2</a>
+                <a href="{{var nps_link}}&&score=3" style="display: inline-block; margin-right: 5px; color: #333333; text-decoration: none; background-color: #f1f1f1; padding: 5px 10px; border-radius: 3px;">3</a>
+                <a href="{{var nps_link}}&&score=4" style="display: inline-block; margin-right: 5px; color: #333333; text-decoration: none; background-color: #f1f1f1; padding: 5px 10px; border-radius: 3px;">4</a>
+                <a href="{{var nps_link}}&&score=5" style="display: inline-block; margin-right: 5px; color: #333333; text-decoration: none; background-color: #f1f1f1; padding: 5px 10px; border-radius: 3px;">5</a>
+                <a href="{{var nps_link}}&&score=6" style="display: inline-block; margin-right: 5px; color: #333333; text-decoration: none; background-color: #f1f1f1; padding: 5px 10px; border-radius: 3px;">6</a>
+                <a href="{{var nps_link}}&&score=7" style="display: inline-block; margin-right: 5px; color: #333333; text-decoration: none; background-color: #f1f1f1; padding: 5px 10px; border-radius: 3px;">7</a>
+                <a href="{{var nps_link}}&&score=8" style="display: inline-block; margin-right: 5px; color: #333333; text-decoration: none; background-color: #f1f1f1; padding: 5px 10px; border-radius: 3px;">8</a>
+                <a href="{{var nps_link}}&&score=9" style="display: inline-block; margin-right: 5px; color: #333333; text-decoration: none; background-color: #f1f1f1; padding: 5px 10px; border-radius: 3px;">9</a>
+                <a href="{{var nps_link}}&&score=10" style="display: inline-block; margin-right: 5px; color: #333333; text-decoration: none; background-color: #f1f1f1; padding: 5px 10px; border-radius: 3px;">10</a>
+            </p>
+            <p style="margin-bottom: 20px;">Your feedback is important to us and will help us improve our services. Thank you for your time!</p>
+            <p style="margin-bottom: 10px;">Best regards,</p>
+            <p style="margin-bottom: 0;">Your Company Team</p>
+        </td>
+    </tr>
+</table>
