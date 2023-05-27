@@ -28,10 +28,10 @@ class CartSaveAfter implements \Magento\Framework\Event\ObserverInterface
     ) {
         $quote = $observer->getEvent()->getQuote();
         $customerId = $quote->getCustomerId();
-        if($quote->getCouponCode()){
+        if(!empty($quote->getCouponCode())){
             $couponData = $this->nps->create()->getCollection()->addFieldToFilter('coupon',$quote->getCouponCode())->getFirstItem();
-            if(!empty($couponData) && $couponData->getCustomerId() !== $customerId){
-                $quote->setCouponCode('')->collectTotals()
+            if(!empty($couponData) && $couponData->getCustomerId() != $customerId){
+                $quote->setCouponCode('')->collectTotals();
             }
         }   
     }
