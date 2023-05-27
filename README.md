@@ -17,3 +17,9 @@ NPS is commonly used as a benchmarking tool and a key performance indicator (KPI
 
 Module Flow
 1. when an order is marked completed a NPS email is triggered on customer email id. Customer recieved it and give feedback clicking on one of score. That score get submitted and coupon is generated to customer on his email id. That coupon can only be used by that customer only.
+
+Validated Environment
+Magento 2.4.6 and later version
+PHP 8.1 and later version
+Mariadb 15.* and later version
+
