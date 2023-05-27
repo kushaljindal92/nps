@@ -42,8 +42,6 @@ Module to generate coupon after getting nps score
 
 ## Specifications
 
- - Observer
-	- sales_order_save_after > Magentomaster\Nps\Observer\Sales\OrderSaveAfter
 
 
 ## Attributes
