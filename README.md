@@ -24,6 +24,6 @@ PHP 8.1 and later version
 Mariadb 15.* and later version
 
 ![image](https://raw.githubusercontent.com/kushaljindal92/nps/main/screenshot/Screenshot%202023-05-26%20at%207.12.45%20PM.png)
+![image](https://raw.githubusercontent.com/kushaljindal92/nps/main/screenshot/Screenshot%202023-05-26%20at%207.11.18%20PM.png)
 ![image](https://raw.githubusercontent.com/kushaljindal92/nps/main/screenshot/Screenshot%202023-05-26%20at%207.12.04%20PM.png)
 ![image](https://raw.githubusercontent.com/kushaljindal92/nps/main/screenshot/Screenshot%202023-05-26%20at%207.11.35%20PM.png)
-![image](https://raw.githubusercontent.com/kushaljindal92/nps/main/screenshot/Screenshot%202023-05-26%20at%207.11.18%20PM.png)
