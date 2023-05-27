@@ -15,11 +15,15 @@ The Net Promoter Score is calculated by subtracting the percentage of detractors
 
 NPS is commonly used as a benchmarking tool and a key performance indicator (KPI) for businesses to assess customer sentiment, track changes over time, and identify areas for improvement in their products or services.
 
-Module Flow
+#Module Flow
 1. when an order is marked completed a NPS email is triggered on customer email id. Customer recieved it and give feedback clicking on one of score. That score get submitted and coupon is generated to customer on his email id. That coupon can only be used by that customer only.
 
-Validated Environment
+#Validated Environment
 Magento 2.4.6 and later version
 PHP 8.1 and later version
 Mariadb 15.* and later version
 
+![image](https://raw.githubusercontent.com/kushaljindal92/nps/main/screenshot/Screenshot%202023-05-26%20at%207.12.45%20PM.png)
+![image](https://raw.githubusercontent.com/kushaljindal92/nps/main/screenshot/Screenshot%202023-05-26%20at%207.12.04%20PM.png)
+![image](https://raw.githubusercontent.com/kushaljindal92/nps/main/screenshot/Screenshot%202023-05-26%20at%207.11.35%20PM.png)
+![image](https://raw.githubusercontent.com/kushaljindal92/nps/main/screenshot/Screenshot%202023-05-26%20at%207.11.18%20PM.png)
