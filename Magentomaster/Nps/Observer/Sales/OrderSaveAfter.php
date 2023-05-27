@@ -81,8 +81,11 @@ class OrderSaveAfter implements \Magento\Framework\Event\ObserverInterface
     }
 
     protected function encryptNpsLink($nps_id){
+        if(empty($nps_id)){
+            return;
+        }
         $url = $this->storeManager->getStore()->getBaseUrl();
-        $encryptedData = $nps_id;//$this->encryptor->encrypt((int)$nps_id);
+        $encryptedData = $this->encryptor->encrypt($nps_id);
         return $url.'magentomaster?data='.$encryptedData;
     }
 }

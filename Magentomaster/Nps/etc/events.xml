@@ -3,4 +3,7 @@
 	<event name="sales_order_save_after">
 		<observer name="magentomaster_nps_observer_sales_ordersaveafter_sales_order_save_after" instance="Magentomaster\Nps\Observer\Sales\OrderSaveAfter"/>
 	</event>
+	<event name="sales_quote_collect_totals_before">
+		<observer name="magentomaster_nps_observer_sales_ordersaveafter_cart_save_after" instance="Magentomaster\Nps\Observer\Sales\CartSaveAfter"/>
+	</event>
 </config>

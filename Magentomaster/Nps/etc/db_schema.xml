@@ -19,7 +19,4 @@
 		<column name="created_at" nullable="true" xsi:type="timestamp" comment="created_at" default="CURRENT_TIMESTAMP"/>
 		<column name="updated_at" nullable="true" xsi:type="timestamp" comment="updated_at" default="CURRENT_TIMESTAMP" on_update="true"/>
 	</table>
-	 <table name="salesrule_coupon" resource="default" engine="innodb" comment="Salesrule Coupon Table">
-        <column xsi:type="int" name="customer_id" nullable="true" comment="Customer ID"/>
-    </table>
 </schema>
