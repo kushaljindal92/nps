@@ -54,24 +54,28 @@ class Index implements HttpGetActionInterface
      */
     public function execute()
     {
-        //echo $this->request->getParam('data'); die;
-        //$encrypdatedData = $this->request->getParam('data');
-        //$data = $this->encryptedData->decrypt('0:3:RmovxRV4ucSV VnqWzP0xBBwX2qR9EBJeXZWDnA');
-        //echo $this->request->getParam('score'); die;
-        $nps = $this->nps->load($this->request->getParam('data'));
-        //if(empty($nps->getNpsScore())){
+        $encrypdatedData = $this->request->getParam('data');
+        if(!empty($encrypdatedData)){
+            $encrypdatedData = str_replace(" ", "+", $encrypdatedData);
+            $data = $this->encryptedData->decrypt($encrypdatedData);
+        }
+        if(!empty($this->request->getParam('score')) && $this->request->getParam('score') <= 10 && $this->request->getParam('score') >= 0){
+            $score = $this->request->getParam('score');
+        }
+        
+        //check if id exist, it may throw error if id does not exist
+        $nps = $this->nps->load($data);
+
+        if(empty($nps->getNpsScore())){
             $coupon = $this->createCoupon->generateCouponForCustomer($nps->getCustomerId());
             $nps->setCoupon($coupon);
-            $nps->setNpsScore($this->request->getParam('score'));
+            $nps->setNpsScore($score);
             try{
                 $nps->save();
-                
             }catch(Exception $e){
                 //log data
             }
-        //}
-
-        //echo "<pre>"; print_r($data); die('ddd');
+        }
         return $this->resultPageFactory->create();
     }
 }

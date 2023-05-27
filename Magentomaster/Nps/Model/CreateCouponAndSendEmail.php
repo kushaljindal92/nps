@@ -48,8 +48,9 @@ class CreateCouponAndSendEmail
         $coupon->setCode($couponCode);
         $coupon->setUsageLimit(1); // Specify the usage limit for each coupon if needed
         $coupon->setIsPrimary(NULL);
-        $coupon->setType(1);
-        $coupon->setUsagePerCustomer(1);
+        $coupon->setType(2);
+        $coupon->setUseAutoGeneration(1);
+        $coupon->setUsesPerCustomer(1);
         $coupon->setCustomerId($customerId);
         $coupon->save();
         //end rule 
@@ -62,6 +63,8 @@ class CreateCouponAndSendEmail
             'coupon_code' => $couponCode
         ];
         $this->sendEmail(SELF::COUPON_EMAIL,$templateVars,$customer->getEmail());
+
+        return $couponCode;
         //end code here
     }
 
